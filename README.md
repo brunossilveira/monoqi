@@ -15,19 +15,33 @@ rules = {
 
 Then you can initialize a `Checkout` object with those rules and start scaning for items:
 
-`checkout = Checkout(rules)`
+```ruby
+checkout = Checkout(rules)
+```
 
-`checkout.scan('A')`
+```ruby
+checkout.scan('A')
+```
 
-`checkout.total # => 50`
+```ruby
+checkout.total # => 50
+```
 
-`checkout.scan('A')`
+```ruby
+checkout.scan('A')
+```
 
-`checkout.total # => 100`
+```ruby
+checkout.total # => 100
+```
 
-`checkout.scan('A')`
+```ruby
+checkout.scan('A')
+```
 
-`checkout.total # => 130`
+```ruby
+checkout.total # => 130
+```
 
 # Setup
 
