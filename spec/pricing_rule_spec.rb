@@ -6,7 +6,7 @@ RSpec.describe PricingRule do
 
   describe '#price_for' do
     context 'when there is special defined' do
-      subject { described_class.new(price, special).price_for(amount) }
+      subject { described_class.new(unit_price: price, special: special).price_for(amount) }
 
       context 'when amount is zero' do
         let(:amount) { 0 }
@@ -42,7 +42,7 @@ RSpec.describe PricingRule do
     end
 
     context 'when there is no special defined' do
-      subject { described_class.new(price, nil).price_for(amount) }
+      subject { described_class.new(unit_price: price).price_for(amount) }
 
       context 'when amount is zero' do
         let(:amount) { 0 }

@@ -1,7 +1,7 @@
 class PricingRule
   attr_reader :unit_price, :special
 
-  def initialize(unit_price, special = nil)
+  def initialize(unit_price:, special: nil)
     @unit_price = unit_price
     @special = special || NoSpecial.new(total_price: unit_price)
   end

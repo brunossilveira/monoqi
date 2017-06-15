@@ -4,10 +4,10 @@ RSpec.describe Checkout do
   describe '#total' do
     let(:rules) do
       {
-        'A' => PricingRule.new(50, Special.new(amount: 3, total_price: 130)),
-        'B' => PricingRule.new(30, Special.new(amount: 2, total_price: 45)),
-        'C' => PricingRule.new(20),
-        'D' => PricingRule.new(15),
+        'A' => PricingRule.new(unit_price: 50, special: Special.new(amount: 3, total_price: 130)),
+        'B' => PricingRule.new(unit_price: 30, special: Special.new(amount: 2, total_price: 45)),
+        'C' => PricingRule.new(unit_price: 20),
+        'D' => PricingRule.new(unit_price: 15),
       }
     end
 
