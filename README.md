@@ -53,7 +53,7 @@ checkout.total # => 130
 
 To run the tests, just run
 
-` & rspec `
+` $ rspec `
 
 # Console
 
